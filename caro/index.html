@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to IDYA Hub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<div id="header">
+	
+		<div id="logo">
+			<img src="./images/dbpic.png"/>
+		</div>
+		<div id="heading">
+			<h1>IdYa HUB
+			</h1>
+		</div>
+		<div id="menu">
+			<ul >
+				<li><a href="https://www.google.com/"> Home </a></li>
+				<li> About us</li>
+				<li> Contact us</li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Dropdown </button>
+						<div class="dropdown-content">
+						  <a class="forsup"herf="#"></a>
+						  <a href="#">Link 1</a>
+						  <a href="#">Link 2</a>
+						  <a href="#">Link 3</a>
+						</div>
+					</div>	
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<div id="main">
+        <div id="home">
+            <div id="home_heading">
+                <h1> Join Our Emerging<br/> <span>SILENT</span>
+                    EDUCATION REVOLUTION </h1>
+            </div>
+            <div id="enroll">
+                <button>Enroll Now</button>
+            </div>
+            <div id="understand">
+                <button class="btn">understand <br/> <span> IN HUB</span></button>
+                <button class="btn">understand <br/><span> ON WEB</span></button>
+            </div>
+		</div>    
+	</div>
+
+		<!-- carousel section  -->
+	<div class="carousel-outer-container">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="images/img1.jpg" >
+			<div class="text">Caption Text</div>
+			</div>
+			
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="images/img2.jpg" >
+			<div class="text">Caption Two</div>
+			</div>
+			
+			<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="images/img3.jpg" >
+			<div class="text">Caption Three</div>
+			</div>
+			
+		</div>
+			<br>
+			
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+	</div>
+
+	<!-- map section -->
+	<div class="map-container">
+		<div id="map" style="width:100%;height:300px"></div>
+	</div>
+
+	<!-- for carousel -->
+	<script src="js/carousel.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+	<!-- for maps-->
+	<script>
+			function myMap() {
+			  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+			  var mapCanvas = document.getElementById("map");
+			  var mapOptions = {center: myCenter, zoom: 5};
+			  var map = new google.maps.Map(mapCanvas, mapOptions);
+			  var marker = new google.maps.Marker({position:myCenter});
+			  marker.setMap(map);
+			}
+	</script>		
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_nLPig9QYcqrpOZmv4O949XPJm-S9IBw&callback=myMap"></script>
+		
+
+</body>
+</html>
