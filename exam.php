@@ -82,8 +82,8 @@ if ($resc = mysqli_query($con, $sqlc)) {
 	
 }
 
-
-$sql = "SELECT * from questions";
+$lev="level1";
+$sql = "SELECT * from questions where level='level1' ORDER BY RAND()";
 if ($res = mysqli_query($con, $sql)) {
 	$i=1;
     if (mysqli_num_rows($res) > 0) {
@@ -95,7 +95,7 @@ if ($res = mysqli_query($con, $sql)) {
 		 {
 		
    ?>
-		  	<form action="verify.php" method="POST">
+		  	
            
 						
 					<label class="question-label"><?php echo $i ;?></label>	
