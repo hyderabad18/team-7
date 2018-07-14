@@ -1,7 +1,7 @@
 <?php 
 	$servername = "localhost";
 	$uname = "root";
-	$pwd = "Vo0xFlDeauPqbeY5";
+	$pwd = "";
 	$dbname = "cfg_prac";
 	$conn=new mysqli($servername ,$uname,$pwd,$dbname);
 	if ($conn->connect_error) {
@@ -9,3 +9,6 @@
 	} 
 
 ?>
+
+
+

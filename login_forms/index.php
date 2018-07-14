@@ -30,7 +30,7 @@
 	<div class="main-agileits">
 <!--form-stars-here-->
 		<div class="form-w3-agile">
-			<h2>Login form for Corporate</h2>
+			<h2>Login form for Admin</h2>
 			<form action="#" method="post">
 				<div class="form-sub-w3">
 					<input type="text" name="Username" placeholder="Customer username " required="" />
@@ -52,64 +52,8 @@
 			</form>
 		</div>
 <!--//form-ends-here-->
-</div>
-<div id="small-dialog1" class="mfp-hide">
-					<div class="contact-form1">
-										<div class="contact-w3-agileits">
-										<h3>Register Form</h3>
-											<form action="#" method="post">
-												<div class="form-sub-w3ls">
-													<input placeholder="Name of the organization"  type="text" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-sitemap" aria-hidden="true"></i>-->
-													</div>
-												</div>
-												<div class="form-sub-w3ls">
-													<input placeholder="Organization Description" class="mail" type="email" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-envelope-o" aria-hidden="true"></i>-->
-													</div>
-												</div>
-												<div class="form-sub-w3ls">
-													<input placeholder="Contact Person Name"  type="password" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-unlock-alt" aria-hidden="true"></i>-->
-													</div>
-												</div>
-												<div class="form-sub-w3ls">
-													<input placeholder="Phone Number"  type="password" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-unlock-alt" aria-hidden="true"></i>-->
-													</div>
-												</div>
-												<div class="form-sub-w3ls">
-													<input placeholder="Email-Id"  type="password" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-unlock-alt" aria-hidden="true"></i>-->
-													</div>
-												</div>
-												<div class="form-sub-w3ls">
-													<input placeholder="Username"  type="password" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-unlock-alt" aria-hidden="true"></i>-->
-													</div>
-												</div>
-												<div class="form-sub-w3ls">
-													<input placeholder="Password"  type="password" required="">
-													<div class="icon-agile">
-														<!--<i class="fa fa-unlock-alt" aria-hidden="true"></i>-->
-													</div>
-												</div>
-											</div>
-											<div class="login-check">
-								 			 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><p>I Accept Terms & Conditions</p></label>
-											</div>
-										<div class="submit-w3l">
-											<input type="submit" value="Register">
-										</div>
-										</form>
-					</div>	
-				</div>
+
+
 	
       <!-- copyright -->
       <div class="copyright w3-agile">
