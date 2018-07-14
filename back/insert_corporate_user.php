@@ -4,16 +4,18 @@
 include 'connections.php';	
 
 
-    $i1=$_POST['user_name'];
-    $i2=$_POST['email'];
+    $i1=$_POST['corp_name'];
+    $i2=$_POST['corp_desc'];
     
-    $i8=$_POST['password'];		
-    $quest = $_POST['question'];
-    $ans = $_POST['answer'];
-    $i9 = md5($i8); 
+    $i3=$_POST['corp_personname'];		
+    $i4 = $_POST['corp_number'];
+    $i5 = $_POST['corp_email'];
+	 $i6 = $_POST['corp_username'];
+	$i7 = $_POST['corp_password'];
+   
     
     
-    $sql="INSERT INTO `normal_user`( `user_name`, `email`, `password`,`security_quest`,`security_ans`) VALUES ('$i1','$i2','$i9','$quest','$ans')";
+    $sql="INSERT INTO `corporate_login`( `company_name`, `org_desc`, `contact_name`,`contact_no`,`user_name`,`email_id`,`password`) VALUES ('$i1','$i2','$i3','$i4','$i5','$i6','$i7')";
   
     
     if ($conn->query($sql)) 

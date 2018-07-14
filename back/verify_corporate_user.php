@@ -8,7 +8,7 @@ include 'connections.php';
 $name = $_POST['Username'];
 $pwd = $_POST['Password'];
 $decrypt = md5($pwd);
-    $sql="SELECT * FROM `normal_user` WHERE  `user_name` like '$name' and `password` LIKE '$decrypt' ";
+    $sql="SELECT * FROM `corporate_login` WHERE  `user_name` like '$name' and `password` LIKE '$decrypt' ";
     
 
     $result=$conn->query($sql);
@@ -37,7 +37,7 @@ $decrypt = md5($pwd);
             alert("success");
         </script>
         <?php
-        header('Location: ../login_forms/staff.php');
+        header('Location: ../login_forms/corporate_login.php');
     }//if
     else
     echo "entered in 0 rows";

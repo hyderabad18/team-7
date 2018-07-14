@@ -66,7 +66,7 @@ include("./forms-redirect.php");
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Contact Person Name"  type="password" required="" name="corp_number">
+													<input placeholder="Contact Person Name"  type="password" required="" name="corp_personname">
 												
 												</div>
 												<div class="form-sub-w3ls">
