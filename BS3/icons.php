@@ -52,7 +52,11 @@
                                 <div class="row">
                                   <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
                                     <div class="font-icon-detail"><i class="pe-7s-album"></i>
-                                      <input type="text" value="pe-7s-album">
+                                          <!-- upload code of pdf -->
+                                          <form method="post" enctype="multipart/form-data" action="./uploadpdf.php">
+                                              image:<input type="file" name="image"/><br/>
+                                              <input type="submit" value="go" name="go"/>
+                                          </form>
                                     </div>
 
                                   </div>

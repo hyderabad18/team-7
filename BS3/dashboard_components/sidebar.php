@@ -36,7 +36,7 @@
                 <li>
                     <a href="mapping.php">
                         <i class="pe-7s-note2"></i>
-                        <p>Allocation</p>
+                        <p>Vacancy List</p>
                     </a>
                 </li>
                 <li>
