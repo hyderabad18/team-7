@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,9 +19,13 @@
 <!-- //web font -->
 </head>
 <body>
-<h1>Credit End user Form</h1>
+<h1></h1>
 <!-- selct option here -->
 <?php
+session_start();
+unset($_SESSION["role"]);
+$_SESSION["role"]="corporate";
+
 include("./forms-redirect.php");
 ?>
 <!-- select options ends here -->
@@ -30,7 +34,7 @@ include("./forms-redirect.php");
 <!--form-stars-here-->
 		<div class="form-w3-agile">
 			<h2>Login form for Corporate</h2>
-			<form action="#" method="post">
+			<form action="../back/verify_corporate.php" method="post">
 				<div class="form-sub-w3">
 					<input type="text" name="Username" placeholder="Customer username " required="" />
 					<div class="icon-w3">
@@ -56,33 +60,33 @@ include("./forms-redirect.php");
 					<div class="contact-form1">
 										<div class="contact-w3-agileits">
 										<h3>Register Form</h3>
-											<form action="#" method="post">
+											<form action="../back/insert_corporate.php" method="post">
 												<div class="form-sub-w3ls">
-													<input placeholder="Name of the organization"  type="text" required="" name="corp_name">
+													<input placeholder="company name"  type="text" required="" name="company_name">
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Organization Description" class="mail" type="email" required="" name="corp_desc">
+													<input placeholder="Organization desc." class="mail" type="text" required="" name="org_desc">
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Contact Person Name"  type="password" required="" name="corp_personname">
+													<input placeholder="Contact Person Name"  type="contact_name" required="" name="contact_person_name">
 												
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Phone Number"  type="password" required="" name="corp_number">
+													<input placeholder="Phone Number"  type="contact_no" required="" name="contact_no">
 												
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Email-Id"  type="password" required="" name="corp_email">
+													<input placeholder="Email-Id"  type="user_name" required="" name="user_name">
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Username"  type="password" required="" name="corp_username">
+													<input placeholder="Username"  type="text" required="" name="email_id">
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Password"  type="password" required="" name="corp_password">
+													<input placeholder="Password"  type="password" required="" name="password">
 													
 												</div>
 											</div>

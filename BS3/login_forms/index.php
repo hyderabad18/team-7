@@ -1,5 +1,5 @@
 <?php
-   include("../back/connections.php")
+   include("../assets/connection.php")
    
    ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
       <!-- //web font -->
    </head>
    <body>
-      <h1>Credit End user Form</h1>
+      <h1></h1>
       <!-- selct option here -->
       <?php
          include("./forms-redirect.php");
@@ -30,7 +30,7 @@
       <div class="main-agileits">
          <!--form-stars-here-->
          <div class="form-w3-agile">
-            <h2>Credit login form as Normal User</h2>
+            <h2>Login form for Admin</h2>
             <form action="../back/verify_normal_user.php" method="post">
                <div class="form-sub-w3">
                   <input type="text" name="Username" placeholder="Customer number or username " required="" />

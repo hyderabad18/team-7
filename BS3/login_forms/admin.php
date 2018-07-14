@@ -1,4 +1,4 @@
-<?php
+﻿<?php
    include("../assets/connection.php")
    
    ?>
@@ -21,9 +21,12 @@
       <!-- //web font -->
    </head>
    <body>
-      <h1>Credit End user Form</h1>
+      <h1></h1>
       <!-- selct option here -->
       <?php
+session_start();
+unset($_SESSION["role"]);
+$_SESSION["role"]="admin";
          include("./forms-redirect.php");
          ?>
     

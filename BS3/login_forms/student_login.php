@@ -1,8 +1,8 @@
-
+﻿
 <!DOCTYPE html>
 <html>
 <head>
-<title>Credit Login / Register Form a Responsive Widget Template :: w3layouts</title>
+<title>Youth4Jobs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Credit Login / Register Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
@@ -19,9 +19,12 @@
 <!-- //web font -->
 </head>
 <body>
-<h1>Credit End user Form</h1>
+<h1></h1>
 <!-- selct option here -->
 <?php
+session_start();
+unset($_SESSION["role"]);
+$_SESSION["role"]="student";
 include("./forms-redirect.php");
 ?>
 <!-- select options ends here -->
@@ -30,7 +33,7 @@ include("./forms-redirect.php");
 <!--form-stars-here-->
 		<div class="form-w3-agile">
 			<h2>Login form for Student</h2>
-			<form action="#" method="post">
+			<form action="../back/verify_student.php" method="post">
 				<div class="form-sub-w3">
 					<input type="text" name="Username" placeholder="Customer number or username " required="" />
 					<div class="icon-w3">
@@ -56,37 +59,39 @@ include("./forms-redirect.php");
 					<div class="contact-form1">
 										<div class="contact-w3-agileits">
 										<h3>Register Form</h3>
-											<form action="#" method="post">
+											<form action="../back/insert_student.php" method="post">
 											<div class="form-sub-w3ls">
-													<input placeholder="Name of Student"  type="text" name="stud_name" required="">
+													<input placeholder="name"  type="text" name="name" required="">
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Email" class="mail" type="email" name="stud_email" required="">
+													<input placeholder="Email" class="mail" type="email" name="email" required="">
 													
 												</div>
 												<div class="form-sub-w3ls">
-													<input placeholder="Phone Number" type="text" name="stud_number" required="">
+													<input placeholder="Phone Number" type="text" name="contact_no" required="">
 													
 												</div>
 												Disability
 												<div class="form-sub-w3ls">
-													<input type="radio" value="see" name="stud_disability">Visual Imparement<br>
-													<input type="radio" value="hear" name="stud_disability">Hearing Disability
+												<label> disability </label>
+													<input type="radio" value="blind" name="disability">Visual Imparement<br>
+													<input type="radio" value="deaf" name="disability">Hearing Disability
 												</div>	
-												Area of Interest
+												
 												<div class="form-sub-w3ls">
-													<input type="radio" value="software" name="stud_interest">Software<br>
-													<input type="radio" value="hospitality" name="stud_interest">Hospitality
+												<label> disability </label>
+													<input type="radio" value="software" name="sector">Software<br>
+													<input type="radio" value="hospitality" name="sector">Hospitality
 												</div>													
 												<div class="form-sub-w3ls">
-													<input placeholder="User Name"  type="text" required="" name="stud_username">
+													<input placeholder="User Name"  type="text" required="" name="user_name">
 													<div class="icon-agile">
 														
 													</div>
 												</div>												
 												<div class="form-sub-w3ls">
-													<input placeholder="Password"  type="password" required="" name="stud_password">
+													<input placeholder="Password"  type="password" required="" name="password">
 													
 												</div>												
 											</div>

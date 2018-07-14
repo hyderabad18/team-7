@@ -36,7 +36,7 @@
                 <li>
                     <a href="mapping.php">
                         <i class="pe-7s-note2"></i>
-                        <p>Allocation</p>
+                        <p>Vacancy List</p>
                     </a>
                 </li>
                 <li>
@@ -57,12 +57,20 @@
                         <p>Maps</p>
                     </a>
                 </li>
+				<li>
+                    <a href="vacancy.php">
+                        <i class="pe-7s-bell"></i>
+                        <p>Post Vacancy</p>
+                    </a>
+                </li>
                 <li>
                     <a href="notifications.php">
                         <i class="pe-7s-bell"></i>
                         <p>Notifications</p>
                     </a>
                 </li>
+		
+
 				<li class="active-pro">
                     <a href="upgrade.php">
                         <i class="pe-7s-rocket"></i>
