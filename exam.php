@@ -61,7 +61,8 @@ var x = setInterval(function() {
 	<center><h2> APTITUDE ASSESSMENT TEST</h2></center>	
 <form action="verify.php" method="POST">	
    
-   <?php 
+   <?php
+$level1="level1";$level2="level2";$level3="level3";   
 $con = mysqli_connect("localhost", "root", "", "cfg");
  $count=0;
 if (!$con) {
@@ -82,13 +83,16 @@ if ($resc = mysqli_query($con, $sqlc)) {
 }
 
 
-$sql = "SELECT * from questions  ";
+$sql = "SELECT * from questions";
 if ($res = mysqli_query($con, $sql)) {
 	$i=1;
     if (mysqli_num_rows($res) > 0) {
        
         while ($row = mysqli_fetch_array($res)) 
 		{$id= $row['qid'];
+	     $level=$row['level'];
+	     if($level=="level1")
+		 {
 		
    ?>
 		  	<form action="verify.php" method="POST">
@@ -111,8 +115,8 @@ if ($res = mysqli_query($con, $sql)) {
 							
       
         <?php
-		$i=$i+1;}
-        
+		}
+        $i=$i+1;}
 		
 		?>
 		<center> <input type="submit" name="submit" value="next" style="height:30px"> </center>
