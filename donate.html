@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HOME|Youth4Jobs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/homepage.css" rel="stylesheet">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Youth4Jobs</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+   
+    <div class="panel panel-default">
+      <div class="panel-heading">Donations</div>
+  </div>
+  <div class="panel-body">
+      <div class="table-responsive">   
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>No of Children</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td><p style="text-align:center;">4</p></td>
+            <td>5000/-</td>
+           <td> <button type="button" class="btn btn-primary" on-click="location.href='#paypal'">Donate</button></td>
+        </tr>
+        <tr>
+                <td><p style="text-align:center;">8</p> </td>
+                <td>10,000/-</td>
+        <td><button type="button" class="btn btn-primary" on-click="location.href='#paypal'">Donate</button></td>
+        </tr>
+        <tr>
+                <td colspan="2" ><input type="number" style="align-content: center;width:50%;" name="amount" placeholder="Enter amount"></td>
+                <td>  <button type="button" class="btn btn-primary" on-click="location.href='#paypal'">Donate</button></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div> 
+</div>
+  </div>
+  
+</div>
+
+
+<footer class="text-center ">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+<p>&copy; Copyright 2018 Youth4Jobs</p>
+
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
