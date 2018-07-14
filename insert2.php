@@ -1,0 +1,7 @@
+<?php
+INSERT INTO  questions(qid,question,optiona,optionb,optionc,optiond,ans,type,level) VALUES ('11', 'An accurate clock shows 8 o'clock in the morning. Through how may degrees will the hour hand rotate when the clock shows 2 o'clock in the afternoon?', '144º','150º','168º','180º','d','verbal','level3')";
+INSERT INTO  questions(qid,question,optiona,optionb,optionc,optiond,ans,type,level) VALUES ('12', 'A clock is started at noon. By 10 minutes past 5, the hour hand has turned through:', '148º','156º','175º','198º','b','verbal','level3')";
+INSERT INTO  questions(qid,question,optiona,optionb,optionc,optiond,ans,type,level) VALUES ('13', '	The angle between the minute hand and the hour hand of a clock when the time is 4.20, is', '154º','160º','178º','120º','c','verbal','level3')";
+INSERT INTO  questions(qid,question,optiona,optionb,optionc,optiond,ans,type,level) VALUES ('14', 'At 3:40, the hour hand and the minute hand of a clock form an angle of:', '154º','130º','118º','100º','b','verbal','level3')";
+INSERT INTO  questions(qid,question,optiona,optionb,optionc,optiond,ans,type,level) VALUES ('15', 'How many times are the hands of a clock at right angle in a day?', '22','23','26','28','a','verbal','level3')";
+?>
