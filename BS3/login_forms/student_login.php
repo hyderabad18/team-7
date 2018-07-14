@@ -75,8 +75,10 @@ include("./forms-redirect.php");
 												Disability
 												<div class="form-sub-w3ls">
 												<label> disability </label>
+
 													<input type="radio" value="blind" name="disability">Visual Imparement<br>
 													<input type="radio" value="deaf" name="disability">Hearing Disability
+
 												</div>	
 												
 												<div class="form-sub-w3ls">
