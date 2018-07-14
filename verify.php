@@ -37,7 +37,7 @@ if (isset($_POST["submit"]))
 				 {
 					 $marks=0;
 				 }
-			$sql2 = "insert into student_answer(qid,answer,actual_ans,marks,type) values('$qid','$ans','$dans','$marks','mocktest')";
+			$sql2 = "insert into student_answer(userid,qid,answer,actual_ans,marks,type,level) values('123','$qid','$ans','$dans','$marks','mocktest','level1')";
 			$result = mysqli_query($con, $sql2);
 			if ($result)
 				{
@@ -56,19 +56,29 @@ if (isset($_POST["submit"]))
 		}
 		
 	}
-	$sid="123"
-	$sql3= "select * from student_answer where sid=" . $sid . "";
+	$userid="123";$count=0;$marks=0;
+	$sql3= "select * from student_answer where userid=" . $userid . "";
 	if ($res3 = mysqli_query($con, $sql3))
 		{
-				if (mysqli_num_rows($res3) > 0)
+			if (mysqli_num_rows($res3) > 0)
 					{
 					while ($row = mysqli_fetch_array($res3))
-						{
+					{$level=$row['level'];
 						$marks = $row['marks'];
-						if($marks==1)
+						if($marks==1 && $level==1)
 						{
 							$count=$count+1;
 						}
+						
 					}
-				}
+	             }
+		}
+		if($count>=2)
+		{
+			header('Location: /exam/exam2.php');
+		}
+		else
+		{
+			header('Location: /exam/exam3.php');
+		}
 ?>
