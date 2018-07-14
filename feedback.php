@@ -37,11 +37,11 @@
     <!-- ------------------wrapper---------------- -->
     <?php require("./dashboard_components/mainpanel.php") ?>
 
-	<form action="feedback_thanks.php">
-        Name: <input type="text" name="name">
-		Phone No: <input type="number" name="number">
-		Feedback: <textarea rows="10" cols="10"></textarea>
-		<input type="submit" value="SEND FEEDBACK">
+	<form action="feedback_thanks.php" method="post">
+        Name: <input type="text" name="name"><br><br>
+		Phone No: <input type="number" name="number"><br><br>
+		Feedback: <textarea rows="2" cols="12" name="feedback"></textarea><br><br>
+		<input type="submit" value="SEND FEEDBACK" name="submit">
 	</form>
 
 
