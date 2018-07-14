@@ -8,7 +8,7 @@ include '../assets/connection.php';
 $name = $_POST['Username'];
 $pwd = $_POST['Password'];
 // $decrypt = md5($pwd);
-    $sql="SELECT * FROM `admin_login` WHERE  `user_name` like '$name' and `password` LIKE '$pwd' ";
+    $sql="SELECT * FROM `corporate_login` WHERE  `user_name` like '$name' and `password` LIKE '$pwd' ";
     
 
     $result=$conn->query($sql);

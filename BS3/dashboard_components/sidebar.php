@@ -57,12 +57,20 @@
                         <p>Maps</p>
                     </a>
                 </li>
+				<li>
+                    <a href="vacancy.php">
+                        <i class="pe-7s-bell"></i>
+                        <p>Post Vacancy</p>
+                    </a>
+                </li>
                 <li>
                     <a href="notifications.php">
                         <i class="pe-7s-bell"></i>
                         <p>Notifications</p>
                     </a>
                 </li>
+		
+
 				<li class="active-pro">
                     <a href="upgrade.php">
                         <i class="pe-7s-rocket"></i>

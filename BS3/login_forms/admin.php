@@ -1,4 +1,4 @@
-<?php
+﻿<?php
    include("../assets/connection.php")
    
    ?>
@@ -24,6 +24,9 @@
       <h1>Credit End user Form</h1>
       <!-- selct option here -->
       <?php
+session_start();
+unset($_SESSION["role"]);
+$_SESSION["role"]="admin";
          include("./forms-redirect.php");
          ?>
     

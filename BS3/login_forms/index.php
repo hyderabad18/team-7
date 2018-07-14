@@ -1,5 +1,5 @@
 <?php
-   include("../back/connections.php")
+   include("../assets/connection.php")
    
    ?>
 <!DOCTYPE html>
