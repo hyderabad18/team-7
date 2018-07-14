@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Credit Login / Register Form a Responsive Widget Template :: w3layouts</title>
+<title>Youth4Jobs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Credit Login / Register Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
@@ -19,7 +19,7 @@
 <!-- //web font -->
 </head>
 <body>
-<h1>Credit End user Form</h1>
+<h1></h1>
 <!-- selct option here -->
 <?php
 session_start();
@@ -75,8 +75,10 @@ include("./forms-redirect.php");
 												Disability
 												<div class="form-sub-w3ls">
 												<label> disability </label>
-													<input type="radio" value="see" name="disability">Visual Imparement<br>
-													<input type="radio" value="hear" name="disability">Hearing Disability
+
+													<input type="radio" value="blind" name="disability">Visual Imparement<br>
+													<input type="radio" value="deaf" name="disability">Hearing Disability
+
 												</div>	
 												
 												<div class="form-sub-w3ls">

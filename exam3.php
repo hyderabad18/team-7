@@ -9,7 +9,6 @@ p {
   margin-top:0px;
 }
 </style>
-</head>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("july 14, 2018 20:30:05").getTime();
@@ -59,10 +58,9 @@ var x = setInterval(function() {
                <div id="ap">
 			   <p id="demo"></p>
 	<center><h2> APTITUDE ASSESSMENT TEST</h2></center>	
-<form action="verify.php" method="POST">	
+<form action="verify3.php" method="POST">	
    
-   <?php
-$level1="level1";$level2="level2";$level3="level3";   
+   <?php 
 $con = mysqli_connect("localhost", "root", "", "cfg");
  $count=0;
 if (!$con) {
@@ -81,21 +79,23 @@ if ($resc = mysqli_query($con, $sqlc)) {
 	}
 	
 }
+$level3="level3";
 
-$lev="level1";
-$sql = "SELECT * from questions where level='level1' ORDER BY RAND()";
+$sql = "SELECT * from questions where level='level3' ORDER BY RAND()";
+
+
 if ($res = mysqli_query($con, $sql)) {
 	$i=1;
     if (mysqli_num_rows($res) > 0) {
+		
        
         while ($row = mysqli_fetch_array($res)) 
-		{$id= $row['qid'];
-	     $level=$row['level'];
-	     if($level=="level1")
+		{$id= $row['qid'];$level=$row['level'];
+	     if($level=="level3")
 		 {
 		
    ?>
-		  	
+    
            
 						
 					<label class="question-label"><?php echo $i ;?></label>	
@@ -115,11 +115,14 @@ if ($res = mysqli_query($con, $sql)) {
 							
       
         <?php
+		   }
+		$i=$i+1;
 		}
-        $i=$i+1;}
+        
 		
 		?>
-		<center> <input type="submit" name="submit" value="next" style="height:30px"> </center>
+		<center> <input type="submit" name="submit" value="submit" style="height:30px"> </center>
+		</form>
 		<?php
        
     }
