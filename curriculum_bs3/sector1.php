@@ -43,9 +43,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-
+                        <?php $sector=$_GET['sector']; ?>
                             <div class="header">
-                                <h4 class="title"><a href="s1_test1.php">Sample Paper 1</a></h4>
+                                <h4 class="title"><a href="s1_test1.php?sector='<?php echo $sector;?>'&test_id=1">Sample Paper 1</a></h4>
                                 <p class="category">Information</p>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title"><a href="s1_test2.php">Sample Paper 2</a></h4>
+                                <h4 class="title"><a href="s1_test2.php?sector='<?php echo $sector;?>'&test_id=1">Sample Paper 2</a></h4>
                                 <p class="category">Information</p>
                             </div>
                             
