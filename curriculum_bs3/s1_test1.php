@@ -44,7 +44,10 @@
         <div class="content">
         <?php $sector=$_GET['sector']; 
             $test_id=$_GET['test_id']; 
+            // $sector = 'engineering';
+            // $paperid = 'paper1';
         ?>
+        
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -54,7 +57,7 @@
                                 <h1 class="title">Sample test 1 in sector 1:</h1>
                             </div>
                             <div class="content">
-                                <button type="button" class="btn btn-default btn-lg"><a href="s1_test1_go.php?sector='<?php echo $sector;?>'&test_id=<?php echo $test_id;?>">Click Here To Take The Test</a></button>
+                                <button type="button" class="btn btn-default btn-lg"><a href="sampletest.php?sector='<?php echo $sector;?>'&test_id=<?php echo $test_id;?>">Click Here To Take The Test</a></button>
                             </div>
                         </div>
                     </div>

@@ -54,7 +54,7 @@
                                 <h1 class="title">Sample test 2 in sector 1:</h1>
                             </div>
                             <div class="content">
-                                <button type="button" class="btn btn-default btn-lg"><a href="s1_test2_go.php?sector='<?php echo $sector;?>'&test_id=<?php echo $test_id;?>">Click Here To Take The Test</a></button>
+                                <button type="button" class="btn btn-default btn-lg"><a href="sampletest.php?sector='<?php echo $sector;?>'&test_id=<?php echo $test_id;?>">Click Here To Take The Test</a></button>
                             </div>
                         </div>
                     </div>
