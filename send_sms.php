@@ -17,7 +17,7 @@ $message=$feedback;
 echo $message;
 echo $mobile;
 
-$json = json_decode(file_get_contents("https://smsapi.engineeringtgr.com/send/?Mobile=9100812912&Password=arshia123&Message=".urlencode($message)."&To=".urlencode($mobile)."&Key=arshiBnGy1fRZladOuA7Ye26FWw"),true);
+$json = json_decode(file_get_contents("https://smsapi.engineeringtgr.com/send/?Mobile=xxx&Password=xxxxx&Message=".urlencode($message)."&To=".urlencode($mobile)."&Key=xxxxx"),true);
 if ($json["status"]==="success") {
     echo $json["msg"];
     //your code when send success
