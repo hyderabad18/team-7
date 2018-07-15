@@ -45,7 +45,7 @@
                         <div class="card">
 
                             <div class="header">
-                                <h4 class="title"><a href="./sector1.php">Banking Sector</a></h4>
+                                <h4 class="title"><a href="./sector1.php?sector='engineering'">Engineering Sector</a></h4>
                                 <p class="category">Category</p>
                             </div>
                             <div class="content">
@@ -56,7 +56,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title"><a href="sector2.php">Health Care Sector</a></h4>
+                                <h4 class="title"><a href="sector2.php?sector='healthCare'">Health Care Sector</a></h4>
                                 <p class="category">Category</p>
                             </div>
                             <div class="content">
@@ -85,7 +85,7 @@
                     <div class="col-md-6">
                         <div class="card ">
                             <div class="header">
-                                <h4 class="title"><a href="sector4.php">Software</a></h4>
+                                <h4 class="title"><a href="sector4.php">Banking Sector</a></h4>
                                 <p class="category">Category</p>
                             </div>
                             <div class="content">
