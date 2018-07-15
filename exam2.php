@@ -12,7 +12,7 @@ p {
 </head>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("july 14, 2018 20:30:05").getTime();
+var countDownDate = new Date().getTime()+10000*60;
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -62,14 +62,15 @@ var x = setInterval(function() {
 <form action="verify.php" method="POST">	
    
    <?php 
-$con = mysqli_connect("localhost", "root", "", "cfg");
+// $con = mysqli_connect("localhost", "root", "", "cfg");
+include("../assets/connection.php");
  $count=0;
-if (!$con) {
+if (!$conn) {
     die("ERROR: Could not connect. "
                 .mysqli_connect_error());
 }
  $sqlc = "SELECT count(question) as count from questions ";
-if ($resc = mysqli_query($con, $sqlc)) {
+if ($resc = mysqli_query($conn, $sqlc)) {
     if (mysqli_num_rows($resc) > 0) {
       
         while ($row = mysqli_fetch_array($resc)) {
@@ -84,7 +85,7 @@ $level2="level2";
 
 $sql = "SELECT * from questions where level='level2' ORDER BY RAND()";
 
-if ($res = mysqli_query($con, $sql)) {
+if ($res = mysqli_query($conn, $sql)) {
 	$i=1;
     if (mysqli_num_rows($res) > 0) {
 		
@@ -99,7 +100,8 @@ if ($res = mysqli_query($con, $sql)) {
            
 						
 					<label class="question-label"><?php echo $i ;?></label>	
-				<label ><strong><?php echo $row['question']; ?></label></strong><br>	
+                <label ><textarea style="border: none; width:80%; background-color: transparent;" id="<?php echo $i; ?>"  style="width:50%"> <?php echo $row['question']; ?></textarea> <div class="button" onclick="speak('<?php echo $i; ?>');">Speak</div>  </label><br>	
+                
 			<input type="radio" name="ans<?php echo $i; ?>" value="a"/>
 							<label ><?php echo $row['optiona']; ?></label><br>
                          <input type="radio" name="ans<?php echo $i ;?>" value="b"/>
@@ -136,3 +138,14 @@ else {
 
   ?> 
   
+<br/><br/><br/><br/><br/><br/>
+<select id="voiceOptions"></select>
+<br/>
+<input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.1" />
+<br/>
+<input type="range" id="rateSlider" min="0" max="1" value="0.5" step="0.1" />
+<br/>
+<input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0.1" />
+<br/>
+            
+<script src="../assets/js/texttoaudio.js"></script>
