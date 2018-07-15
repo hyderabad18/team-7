@@ -29,21 +29,26 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-	<script>
+<script>
 function validateForm() {
-    var x = document.forms["myForm"]["name"].value;
+    var x = document.forms["myForm"]["job_role"].value;
     if (x == "") {
-        alert("Name must be filled out");
+        alert("job role must be filled out");
         return false;
     }
-	var x = document.forms["myForm"]["number"].value;
+	var x = document.forms["myForm"]["job_desc"].value;
     if (x == "") {
-        alert("number must be filled out");
+        alert("job description must be filled out");
         return false;
     }
-	var x = document.forms["myForm"]["feedback"].value;
+	var x = document.forms["myForm"]["job_vacancy"].value;
     if (x == "") {
-        alert("feedback must be filled out");
+        alert("job vacancy must be filled out");
+        return false;
+    }
+	var x = document.forms["myForm"]["job_date"].value;
+    if (x == "") {
+        alert("job date must be filled out");
         return false;
     }
 }
@@ -57,23 +62,26 @@ function validateForm() {
     <!-- ------------------wrapper---------------- -->
     <?php require("./dashboard_components/mainpanel.php") ?>
 
-	<form action="feedback_thanks.php" method="post" onsubmit = "return validateForm()" name="myForm">
-        Name: <input type="text" name="name"><br><br>
-		Phone No: <input type="number" name="number"><br><br>
-		Feedback: <textarea rows="2" cols="12" name="feedback"></textarea><br><br>
-		<input type="submit" value="SEND FEEDBACK" name="submit">
-	</form>
+        <div class="content">
+            <div class="container-fluid">
+              <form name="myForm" action="vacancy_thanks.php" onsubmit = "return validateForm()" >
+Job Role: <input type="text" name="job_role" method="get"><br><br>
+Job Description: <textarea rows="4" cols="50" name="job_desc"></textarea><br><br>
+No of vacancies: <input type="number" name="job_vacancy"><br><br>
+Last date to apply: <input type="date" name="job_date"><br><br>
+<input type="submit" value="UPDATE VACANCY"><br><br>
+</form>
+                      
 
-
-       <?php require("./dashboard_components/footer.php") ?>
-
+      <!-- footer startsand ends in require -->
+      <?php require("./dashboard_components/footer.php") ?>
     </div>
 </div>
 
 
 </body>
 
-    <!--   Core JS Files   -->
+        <!--   Core JS Files   -->
     <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
